@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+.greenBack {
+	background-color: green;
+}
+.whiteText {
+	color: white;
+}
+.orangeText {
+	color: orange;
+}
+.redText {
+	color: red;
+}
+.boldText {
+	text-decoration: bold;
+}
+.underlineText {
+	text-decoration: underline;
+}
+.spacing {
+	width: 150px;
+}
