@@ -1,5 +1,5 @@
 class Person
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :nickname
 
   def initialize(name, age)
     @name = name
@@ -7,22 +7,25 @@ class Person
   end
 
   def nickname
-    # YOUR IMPLEMENTATION HERE
-    'nickname'
+    @name[0..3]
   end
 
   def birth_year
-    # YOUR IMPLEMENTATION HERE
-    1990
+    2016 - @age.to_i
   end
 
   def introduction
-    # YOUR IMPLEMENTATION HERE
-    'introduce'
+    "#{@name} #{@age}"
   end
 
   def fib_number
-    # YOUR IMPLMENTATION HERE
-    0
+      a = 0
+      b = 1
+      @age.to_i.times do
+          temp = a
+          a = b
+          b = temp + b
+      end
+      return a
   end
 end
